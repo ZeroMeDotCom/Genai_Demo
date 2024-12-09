@@ -2,7 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 async function generateAIContent() {
     try {
-        const genAI = new GoogleGenerativeAI("AIzaSyCC5hH3L5LhT1mCrWbawMVCumzftbxQ0Ew");
+        const genAI = new GoogleGenerativeAI("<KEY>");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
         const prompt = "Explain how AI works";
 
